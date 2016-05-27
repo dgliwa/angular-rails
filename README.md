@@ -42,3 +42,7 @@ How you build your rails api is entirely up to you.
 ## Deployment
 
 I have yet to deploy this application to a production environment, this template is initially intended to be a sandbox for people trying to set up angular and rails without needing to use something like grunt.  This step will be added later, as I have time.
+
+
+## Coming Soon
+* jasmine and karma support
