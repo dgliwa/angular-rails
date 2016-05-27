@@ -38,6 +38,27 @@ The application controller provides the root url, which initializes the angular 
 
 How you build your rails api is entirely up to you.
 
+## Karma/Jasmine tests
+
+For the javascript tests, you will need phantomjs installed on your path.  For macs, it's as simple as `brew install phantomjs`.
+
+To install all the js test dependencies:
+
+```
+$ npm install
+```
+To run the tests once:
+
+```
+$ rake karma:run
+```
+To start the test runner for active changes to the tests, you can run:
+
+```
+$ rake karma:start
+```
+
+
 
 ## Deployment
 
@@ -45,4 +66,4 @@ I have yet to deploy this application to a production environment, this template
 
 
 ## Coming Soon
-* jasmine and karma support
+If you have suggestions on what to add, please open an issue.
