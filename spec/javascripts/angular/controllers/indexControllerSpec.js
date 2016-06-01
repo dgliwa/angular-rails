@@ -17,4 +17,21 @@ describe('IndexController', function() {
             expect($scope.items).toEqual([{ name: "mark" }, { name: "raz" }, { name: "joye" }, { name: "lacey"}, { name: "alejandro" }]);
         });
     });
+
+    describe('$scope.addNewName', function() {
+        it('adds new item to items', function() {
+            var $scope = {};
+            var controller = $controller('IndexController', { $scope: $scope });
+            $scope.newName = "BLAH";
+            $scope.addNewName();
+            expect($scope.items).toEqual([{ name: "mark" }, { name: "raz" }, { name: "joye" }, { name: "lacey"}, { name: "alejandro" }, { name: "BLAH" }]);
+        });
+        it('clears new name', function() {
+            var $scope = {};
+            var controller = $controller('IndexController', { $scope: $scope });
+            $scope.newName = "BLAH";
+            $scope.addNewName();
+            expect($scope.newName).toEqual("");
+        });
+    });
 });
