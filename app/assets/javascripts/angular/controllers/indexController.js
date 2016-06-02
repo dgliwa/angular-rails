@@ -1,7 +1,7 @@
 angular.module("app.controllers").controller("IndexController", ["$scope", function($scope) {
     $scope.newName = "";
     $scope.test = "Hello World!";
-    $scope.items = [{ name: "mark" }, { name: "raz" }, { name: "joye" }, { name: "lacey"}, { name: "alejandro" }];
+    $scope.items = [{ name: "michael scott" }, { name: "holly flax" }, { name: "jim halpert" }, { name: "dwight schrute"}, { name: "stanley hudson" }];
 
     $scope.addNewName = function() {
         if($scope.newName && $scope.newName != "") {

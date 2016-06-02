@@ -14,7 +14,7 @@ describe('IndexController', function() {
         it('sets scope.items on start', function() {
             var $scope = {};
             var controller = $controller('IndexController', { $scope: $scope });
-            expect($scope.items).toEqual([{ name: "mark" }, { name: "raz" }, { name: "joye" }, { name: "lacey"}, { name: "alejandro" }]);
+            expect($scope.items).toEqual([{ name: "michael scott" }, { name: "holly flax" }, { name: "jim halpert" }, { name: "dwight schrute"}, { name: "stanley hudson" }]);
         });
     });
 
@@ -24,7 +24,7 @@ describe('IndexController', function() {
             var controller = $controller('IndexController', { $scope: $scope });
             $scope.newName = "BLAH";
             $scope.addNewName();
-            expect($scope.items).toEqual([{ name: "mark" }, { name: "raz" }, { name: "joye" }, { name: "lacey"}, { name: "alejandro" }, { name: "BLAH" }]);
+            expect($scope.items).toEqual([{ name: "michael scott" }, { name: "holly flax" }, { name: "jim halpert" }, { name: "dwight schrute"}, { name: "stanley hudson" }, { name: "BLAH" }]);
         });
         it('clears new name', function() {
             var $scope = {};
