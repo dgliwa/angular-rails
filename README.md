@@ -3,6 +3,8 @@ README
 
 Welcome to this angular rails template, for rails 4 and angular 1.
 
+[Here](https://rails-angular-app-bootstrap.herokuapp.com/) is this project running in heroku.
+
 ## Set Up
 
 ```
