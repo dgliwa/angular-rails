@@ -1,7 +1,10 @@
-angular.module("app.controllers").controller("IndexController", ["$scope", function($scope) {
+angular.module("app.controllers").controller("IndexController", ["$scope", "names", function($scope, names) {
     $scope.newName = "";
     $scope.test = "Hello World!";
-    $scope.items = [{ name: "michael scott" }, { name: "holly flax" }, { name: "jim halpert" }, { name: "dwight schrute"}, { name: "stanley hudson" }];
+
+    var promise = names.query().$promise.then(function(data){
+        $scope.items = data;
+    });
 
     $scope.addNewName = function() {
         if($scope.newName && $scope.newName != "") {
