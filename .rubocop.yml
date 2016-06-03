@@ -1,0 +1,14 @@
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'spec/spec_helper.rb'
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 250
+
+Style/ClassAndModuleChildren:
+  Enabled: false

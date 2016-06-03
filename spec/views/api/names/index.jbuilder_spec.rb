@@ -6,10 +6,10 @@ describe 'api/names/index.jbuilder' do
 
     render
 
-    expect(rendered).to eq([{ name: "michael scott" },
-                            { name: "holly flax" },
-                            { name: "jim halpert" },
-                            { name: "dwight schrute"},
-                            { name: "stanley hudson" }].to_json)
+    expect(rendered).to eq([{ name: 'michael scott' },
+                            { name: 'holly flax' },
+                            { name: 'jim halpert' },
+                            { name: 'dwight schrute' },
+                            { name: 'stanley hudson' }].to_json)
   end
 end

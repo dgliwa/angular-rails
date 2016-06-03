@@ -17,9 +17,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-
-
-
 gem 'rails-assets-angular', source: 'https://rails-assets.org'
 gem 'rails-assets-angular-route', source: 'https://rails-assets.org'
 gem 'angular-rails-templates', '~> 1.0.0'
@@ -28,6 +25,7 @@ group :development, :test do
   gem 'byebug'
   gem 'rails-assets-angular-mocks', source: 'https://rails-assets.org'
   gem 'rspec-rails', '~> 3.4'
+  gem 'rubocop'
 end
 
 group :development do
@@ -41,4 +39,3 @@ end
 group :production do
   gem 'rails_12factor'
 end
-
