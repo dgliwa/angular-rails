@@ -26,6 +26,7 @@ describe('IndexController', function() {
             $scope.addNewName();
             expect($scope.items).toEqual([{ name: "michael scott" }, { name: "holly flax" }, { name: "jim halpert" }, { name: "dwight schrute"}, { name: "stanley hudson" }, { name: "BLAH" }]);
         });
+
         it('clears new name', function() {
             var $scope = {};
             var controller = $controller('IndexController', { $scope: $scope });
