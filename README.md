@@ -8,9 +8,10 @@ Welcome to this angular rails template, for rails 4 and angular 1.
 ## Set Up
 
 ```
-$ git clone https://github.com/dgliwa/angular_rails_template.git
-$ bundle install
-$ rails s
+git clone https://github.com/dgliwa/angular_rails_template.git
+bundle install
+bundle exec rake db:create
+rails s
 ```
 
 ## Template Help
@@ -31,14 +32,26 @@ The file structure for the application is as follows:
 		* stylesheets
 			* ...
 	* controllers
+		* api/
+			* names_controller.rb
 		* ...
 	* ...
 * ...
 
 
-The application controller provides the root url, which initializes the angular application.  The angular app uses angular-route by default, and has a small sample controller.  There is no css, but it is simple to add your own css files or frameworks with statically or through the asset pipeline.  I attempted to follow the [angular style guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) as best as possible.
+The application controller provides the root url, which initializes the angular application.  The angular app uses angular-route and angular-resource by default, and has a small sample controller.  There is no css, but it is simple to add your own css files or frameworks with statically or through the asset pipeline.  I attempted to follow the [angular style guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) as best as possible.
 
-How you build your rails api is entirely up to you.
+How you build your rails api is entirely up to you.  The api is namespaced.
+
+## rspec test
+
+This template uses rspec.  There are two sample tests, one for an api controller call, and one for the json response builder.
+
+To run the tests:
+
+```
+bundle exec rspec
+```
 
 ## Karma/Jasmine tests
 
@@ -47,19 +60,28 @@ For the javascript tests, you will need phantomjs installed on your path.  For m
 To install all the js test dependencies:
 
 ```
-$ npm install
+npm install
 ```
 To run the tests once:
 
 ```
-$ rake karma:run
+rake karma:run
 ```
 To start the test runner for active changes to the tests, you can run:
 
 ```
-$ rake karma:start
+rake karma:start
 ```
 
+## rubocop
+
+This template has rubocop as a dependency.  It is a nice tool to ensure that you are adhering to defined ruby and rails standards.  You can add/edit your rubocop preferences by editing the .rubocop.yml file.  
+
+To run the rubocop job:
+
+```
+bundle exec rubocop
+```
 
 
 ## Deployment
