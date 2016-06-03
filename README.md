@@ -5,6 +5,13 @@ Welcome to this angular rails template, for rails 4 and angular 1.
 
 [Here](https://rails-angular-app-template.herokuapp.com/) is this project running in heroku.
 
+Tools used:
+
+* [Ruby on Rails](http://rubyonrails.org/)
+* [rspec](http://rspec.info/)
+* [AngularJS](https://angularjs.org/)
+* [jasmine](http://jasmine.github.io/)
+
 ## Set Up
 
 ```
