@@ -13,4 +13,5 @@ app.config(["$routeProvider", function($routeProvider) {
             templateUrl: "index.html",
             controller: "IndexController"
         })
+        .otherwise({ redirectTo: '/' });
 }]);
